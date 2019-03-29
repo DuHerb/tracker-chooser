@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  function createIDtag(input1, input2) {
+  //reduceInput() takes two arguments and returns a single letter string representing their equality or difference.
+  function reduceInput(input1, input2) {
     if (input1 === input2) {
       return input1;
     } else {
@@ -8,13 +9,20 @@ $(document).ready(function(){
     }
   };
 
-  // function buildID(input1, input2, input3) {
+  //buildImageID() takes arguments from reduceInput() and concatenates them into a usable .class name
+  function buildImageID(input1, input2, input3) {
+    return "." + input1 + input2 + input3;
+  }
+
+  // var imageID = (buildImageID("f","a","e"));
   //
-  // }
-  var a = "a";
-  var b = "a";
-  var testTag = createIDtag(a,b);
-  console.log(testTag);
+  // $(imageID).removeClass('my-hide');
+
+  // console.log(buildImageID("f","a","e"));
+  // var a = "a";
+  // var b = "a";
+  // var testTag = reduceInput(a,b);
+  // console.log(testTag);
 
   $("form").submit(function(event) {
     event.preventDefault();
