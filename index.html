@@ -22,15 +22,25 @@
       </div>
       <button type="button" name="button">Take the test!</button>
       <button type="button" name="button">See all tracks.</button>
-    </div><!-- /.masthead -->
+    </div><!-- /.head-box -->
 
     <!-- .chooser-box contains the modal and form that will get input from user -->
     <div class="chooser-box">
-      <div class="modal">
+      <div class=""><!-- .modal when form is working -->
         <form class="" action="index.html" method="post">
-          Form Stuff
+          <div class="question-card">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+            </div>
+          </div><!-- /.question-card -->
+          <button class="btn btn-primary" type="submit">Submit form</button>
         </form>
-      </div>
+      </div><!-- modal -->
     </div><!-- /.chooser-box -->
 
     <!-- .display-box is the container for the selected content to be displayed.  all .course-cards are nested within -->
