@@ -33,6 +33,36 @@ header img {
 
 .head-box button {
   margin: 10px;
+  color: white;
+  background-color: #00B3B4;
+}
+
+form {
+  padding: 80px;
+}
+
+.form-check-inline {
+  margin: 10px 30px;
+}
+
+.card {
+  border: 2px solid lightgray;
+  width: 60%;
+  margin: 20px auto;
+}
+.card-header{
+  color: white;
+  background-color: #00b3b4;
+}
+
+.card-header p {
+  margin: 0;
+}
+
+#main-submit {
+  display: block;
+  background-color: #00B3B4;
+  margin: 20px auto;
 }
 
 .my-hide {
