@@ -14,16 +14,6 @@ $(document).ready(function(){
     return "." + input1 + input2 + input3;
   }
 
-  // var imageID = (buildImageID("f","a","e"));
-  //
-  // $(imageID).removeClass('my-hide');
-
-  // console.log(buildImageID("f","a","e"));
-  // var a = "a";
-  // var b = "a";
-  // var testTag = reduceInput(a,b);
-  // console.log(testTag);
-
   $("form").submit(function(event) {
     event.preventDefault();
 
@@ -36,10 +26,12 @@ $(document).ready(function(){
 
     console.log(q1, q2, q3, q4, q5, q6);
 
+    var imageID = buildImageID(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
+
+    console.log(imageID);
+
     // $('.course-card').removeClass('my-hide');
 
   });
-
-
 
 });
