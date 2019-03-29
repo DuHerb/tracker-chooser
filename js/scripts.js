@@ -9,8 +9,8 @@ $(document).ready(function(){
     }
   };
 
-  //buildImageID() takes arguments from reduceInput() and concatenates them into a usable .class name
-  function buildImageID(input1, input2, input3) {
+  //buildCourseClass() takes arguments from reduceInput() and concatenates them into a usable .class name
+  function buildCourseClass(input1, input2, input3) {
     return "." + input1 + input2 + input3;
   }
 
@@ -26,9 +26,9 @@ $(document).ready(function(){
 
     console.log(q1, q2, q3, q4, q5, q6);
 
-    var imageID = buildImageID(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
+    var courseClass = buildCourseClass(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
 
-    console.log(imageID);
+    console.log(courseClass);
 
     // $('.course-card').removeClass('my-hide');
 
