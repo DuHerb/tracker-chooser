@@ -1,10 +1,10 @@
 # Epicodus Tracker Chooser
 
-#### Help prospective students choose their Epicodus track.
+#### This page is designed to help prospective students choose their Epicodus track.
 
-## Current Version:  1.0 3/29/2019
+### Version 1.0 --- 3/29/2019
 
-#### Author: Dustin Herboldshimer
+### Author: Dustin Herboldshimer
 
 ## Description
 
