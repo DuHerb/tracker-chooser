@@ -1,5 +1,5 @@
 F A C
-F AC S
+F A CS
 F A S
 
 F AM C
@@ -7,7 +7,7 @@ F AM CS
 F AM S
 
 F M C
-F AM CS
+F M CS
 F M S
 
 FB A C
