@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     console.log(courseClass);
 
-    // $('.course-card').removeClass('my-hide');
+    $(courseClass).removeClass('my-hide');
 
   });
 
