@@ -1,0 +1,35 @@
+F A C
+F AC S
+F A S
+
+F AM C
+F AM CS
+F AM S
+
+F M C
+F AM CS
+F M S
+
+FB A C
+FB A CS
+FB A S
+
+FB AM C
+FB AM CS
+FB AM S
+
+FB M C
+FB M CS
+FB M S
+
+B A C
+B A CS
+B A S
+
+B AM C
+B AM CS
+B AM S
+
+B M C
+B M CS
+B M S
