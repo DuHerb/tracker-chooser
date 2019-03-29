@@ -59,12 +59,33 @@ form {
   margin: 0;
 }
 
+.course-card .card-header {
+  background-color: black;
+}
+
+.course-card p {
+  padding: 25px;
+  line-height: 1.75;
+}
+
+.course-card button {
+  margin: 10px;
+  color: white;
+  background-color: #00b3b4;
+}
+
+.course-card a {
+  margin: 0 25px;
+  color: #00b3b4;
+}
+
 #main-submit {
   display: block;
+  color: white;
   background-color: #00B3B4;
   margin: 20px auto;
 }
 
 .my-hide {
-  visibility: hidden;
+  display: none;
 }
