@@ -21,7 +21,7 @@ footer {
 .head-box {
   background-color: #1c1c1c;
   color: white;
-  padding: 80px;
+  padding: 80px 10%;
   margin-top: 15px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -109,7 +109,7 @@ footer {
 .goodbye-box {
   background-color: #1c1c1c;
   color: white;
-  padding:  30px 80px;
+  padding:  30px 15%;
   margin-top: 15px;
   font-family: 'Open Sans', sans-serif;
 }
