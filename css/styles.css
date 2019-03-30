@@ -13,7 +13,7 @@ header img {
 
 
 .head-box {
-  background-color: black;
+  background-color: #1c1c1c;
   color: white;
   padding: 80px;
   margin-top: 15px;
@@ -42,7 +42,7 @@ header img {
 } */
 
 .form-check-inline {
-  margin: 10px 30px;
+  margin: 10px 5%;
 }
 
 .card {
@@ -50,6 +50,13 @@ header img {
   width: 60%;
   margin: 20px auto;
 }
+
+.question-card img {
+  width: 200px;
+  border-radius: 5px;
+  margin: 5px 3%;
+}
+
 .card-header{
   color: white;
   background-color: #00b3b4;
@@ -62,6 +69,7 @@ header img {
 .course-card .card-header {
   background-color: black;
 }
+
 
 .course-card p {
   padding: 25px;
