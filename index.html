@@ -31,98 +31,117 @@
     </div><!-- /.head-box -->
 
     <!-- .chooser-box contains the modal and form that will get input from user -->
+
     <!-- Modal -->
-    <div class="chooser-box">
-        <form class="" action="index.html" method="post">
-          <div class="question-card card">
-            <div class="card-header">
-              <p>What job suits you the most?</p>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question1" id="exampleRadios1" value="f">
-              <label class="form-check-label" for="exampleRadios1">Painter</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question1" id="exampleRadios2" value="b">
-              <label class="form-check-label" for="exampleRadios2">Mechanic</label>
-            </div>
-          </div><!-- /.question-card 1-->
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-          <div class="question-card card">
-            <div class="card-header">
-              <p>What do you see?</p>
-            </div>
-            <img src="img/cloud.jpg" alt="Cloud">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question2" id="exampleRadios1" value="f">
-              <label class="form-check-label" for="exampleRadios1"> A Fluffy Lion Cub</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question2" id="exampleRadios2" value="b">
-              <label class="form-check-label" for="exampleRadios2"> A Cumulus Cloud</label>
-            </div>
-          </div><!-- /.question-card 2-->
+          <div class="modal-body">
+            <form class="" action="index.html" method="post">
+              <div class="question-card card">
+                <div class="card-header">
+                  <p>What job suits you the most?</p>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1" id="exampleRadios1" value="f">
+                  <label class="form-check-label" for="exampleRadios1">Painter</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1" id="exampleRadios2" value="b">
+                  <label class="form-check-label" for="exampleRadios2">Mechanic</label>
+                </div>
+              </div><!-- /.question-card 1-->
 
-          <div class="question-card card">
-            <div class="card-header">
-              <p>What kind of website are you more likely to use?</p>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question3" id="exampleRadios1" value="a">
-              <label class="form-check-label" for="exampleRadios1">Your favorite blog or news source</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question3" id="exampleRadios2" value="m">
-              <label class="form-check-label" for="exampleRadios2">Service Site like AirBNB or Twitter</label>
-            </div>
-          </div><!-- /.question-card 3-->
+              <div class="question-card card">
+                <div class="card-header">
+                  <p>What do you see?</p>
+                </div>
+                <img src="img/cloud.jpg" alt="Cloud">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2" id="exampleRadios1" value="f">
+                  <label class="form-check-label" for="exampleRadios1"> A Fluffy Lion Cub</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2" id="exampleRadios2" value="b">
+                  <label class="form-check-label" for="exampleRadios2"> A Cumulus Cloud</label>
+                </div>
+              </div><!-- /.question-card 2-->
 
-          <div class="question-card card">
-            <div class="card-header">
-              <p>What's your Ideal Work Environment?</p>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question4" id="exampleRadios1" value="a">
-              <label class="form-check-label" for="exampleRadios1">A spacious, open floor plan</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question4" id="exampleRadios2" value="m">
-              <label class="form-check-label" for="exampleRadios2">Alone among the server banks</label>
-            </div>
-          </div><!-- /.question-card 4-->
+              <div class="question-card card">
+                <div class="card-header">
+                  <p>What kind of website are you more likely to use?</p>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3" id="exampleRadios1" value="a">
+                  <label class="form-check-label" for="exampleRadios1">Your favorite blog or news source</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3" id="exampleRadios2" value="m">
+                  <label class="form-check-label" for="exampleRadios2">Service Site like AirBNB or Twitter</label>
+                </div>
+              </div><!-- /.question-card 3-->
 
-          <div class="question-card card">
-            <div class="card-header">
-              <p>Pick One</p>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question5" id="exampleRadios1" value="c">
-              <label class="form-check-label" for="exampleRadios1">Bill Gates</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question5" id="exampleRadios2" value="s">
-              <label class="form-check-label" for="exampleRadios2">Steve Jobs</label>
-            </div>
-          </div><!-- /.question-card 5-->
+              <div class="question-card card">
+                <div class="card-header">
+                  <p>What's your Ideal Work Environment?</p>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question4" id="exampleRadios1" value="a">
+                  <label class="form-check-label" for="exampleRadios1">A spacious, open floor plan</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question4" id="exampleRadios2" value="m">
+                  <label class="form-check-label" for="exampleRadios2">Alone among the server banks</label>
+                </div>
+              </div><!-- /.question-card 4-->
 
-          <div class="question-card card">
-            <div class="card-header">
-              <p>If you were invited to a game night, which game would you bring?</p>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question6" id="exampleRadios1" value="c">
-              <label class="form-check-label" for="exampleRadios1">Mousetrap</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="question6" id="exampleRadios2" value="s">
-              <label class="form-check-label" for="exampleRadios2">Settlers of Catan</label>
-            </div>
-          </div><!-- /.question-card 6-->
+              <div class="question-card card">
+                <div class="card-header">
+                  <p>Pick One</p>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question5" id="exampleRadios1" value="c">
+                  <label class="form-check-label" for="exampleRadios1">Bill Gates</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question5" id="exampleRadios2" value="s">
+                  <label class="form-check-label" for="exampleRadios2">Steve Jobs</label>
+                </div>
+              </div><!-- /.question-card 5-->
 
+              <div class="question-card card">
+                <div class="card-header">
+                  <p>If you were invited to a game night, which game would you bring?</p>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question6" id="exampleRadios1" value="c">
+                  <label class="form-check-label" for="exampleRadios1">Mousetrap</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question6" id="exampleRadios2" value="s">
+                  <label class="form-check-label" for="exampleRadios2">Settlers of Catan</label>
+                </div>
+              </div><!-- /.question-card 6-->
 
-          <button id="main-submit" class="btn" type="submit">Submit form</button>
-        </form>
-    </div><!-- /.chooser-box -->
+              <button id="main-submit" class="btn" type="submit">Submit form</button>
+            </form>
+          </div><!-- /.modal-body -->
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- .display-box is the container for the selected content to be displayed.  all .course-cards are nested within -->
     <div class="display-box">
