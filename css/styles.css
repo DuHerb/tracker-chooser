@@ -93,3 +93,15 @@ header img {
 .my-hide {
   display: none;
 }
+
+.modal {
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal-body {
+  background-color: #1c1c1c;
+}
+
+.modal-header {
+  font-family: "Varela Round", sans-serif;
+}
