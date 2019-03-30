@@ -93,8 +93,47 @@ header img {
   font-family: "Varela Round", sans-serif;
 }
 
+.goodbye-box {
+  font-size: 25px;
+  line-height: 1.0;
+}
+
+.goodbye-box {
+  background-color: #1c1c1c;
+  color: white;
+  padding:  30px 80px;
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.goodbye-box p{
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.goodbye-box h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 50px;
+  margin: 25px 0;
+}
+
+.goodbye-box h2 {
+  margin: 25px 0;
+}
+
+.goodbye-box img {
+  max-width: 300px;
+  float: right;
+  border-radius: 110px;
+}
+
+
 .my-hide {
   display: none;
+}
+
+.btn {
+  border: 1px solid lightgray;
 }
 
 #main-submit {
