@@ -14,6 +14,7 @@ $(document).ready(function(){
     return "." + input1 + input2 + input3;
   }
 
+  // modal/form submit control
   $("form").submit(function(event) {
 
     event.preventDefault();
@@ -25,20 +26,21 @@ $(document).ready(function(){
     var q5 = $('input:radio[name=question5]:checked').val();
     var q6 = $('input:radio[name=question6]:checked').val();
 
-    console.log(q1, q2, q3, q4, q5, q6);
+    //save for testing
+    //console.log(q1, q2, q3, q4, q5, q6);
 
     var courseClass = buildCourseClass(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
 
-    console.log(courseClass);
+    //save for testing
+    // console.log(courseClass);
 
     $(courseClass).removeClass('my-hide');
     $("#formModal").modal('toggle');
     return false;
 
-    // $("#formModal").modal('hide');
-
   });
 
+  // button controls
   $(".openModal").on("click", function(){
     $(".display-box").children().addClass('my-hide');
     $("#formModal").modal('show');
@@ -56,6 +58,5 @@ $(document).ready(function(){
     $('#formModal').on('hidden.bs.modal', function (e) {
       $("form").trigger("reset");
   });
-
 
 });
