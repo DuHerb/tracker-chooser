@@ -35,6 +35,7 @@ $(document).ready(function(){
     // console.log(courseClass);
 
     $(courseClass).removeClass('my-hide');
+    $(".goodbye-box").removeClass("my-hide");
     $("#formModal").modal('toggle');
     return false;
 
@@ -43,20 +44,26 @@ $(document).ready(function(){
   // button controls
   $(".openModal").on("click", function(){
     $(".display-box").children().addClass('my-hide');
+    $(".goodbye-box").addClass("my-hide");
     $("#formModal").modal('show');
   })
 
   $(".view-all").on("click", function() {
     $(".display-box").children().removeClass('my-hide');
+    $(".goodbye-box").removeClass("my-hide");
   });
 
   $(".retake").on("click", function() {
     $(".display-box").children().addClass('my-hide');
+    $(".goodbye-box").addClass("my-hide");
     $("#formModal").modal('show');
   });
 
     $('#formModal').on('hidden.bs.modal', function (e) {
       $("form").trigger("reset");
   });
+
+  // $(".goodbye-box").removeClass("my-hide");
+  // $(".goodbye-box").addClass("my-hide");
 
 });
