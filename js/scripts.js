@@ -15,6 +15,7 @@ $(document).ready(function(){
   }
 
   $("form").submit(function(event) {
+
     event.preventDefault();
 
     var q1 = $('input:radio[name=question1]:checked').val();
@@ -31,6 +32,7 @@ $(document).ready(function(){
     console.log(courseClass);
 
     $(courseClass).removeClass('my-hide');
+
     // $("#formModal").modal('hide');
 
   });
@@ -43,5 +45,9 @@ $(document).ready(function(){
     $(".display-box").children().addClass('my-hide');
     $("#formModal").modal('show');
   });
+
+  $('#formModal').on('hidden.bs.modal', function (e) {
+      $("form").trigger("reset");
+})
 
 });
