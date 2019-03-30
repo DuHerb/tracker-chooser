@@ -11,6 +11,13 @@ header img {
   max-height: 71px;
 }
 
+footer {
+  float: left;
+  margin-top: 40px;
+  color: lightgray;
+  font-size: 1rem;
+}
+
 .head-box {
   background-color: #1c1c1c;
   color: white;
@@ -67,7 +74,8 @@ header img {
 
 .course-card p {
   padding: 25px;
-  line-height: 1.75;
+  line-height: 1.7;
+  font-size: 1.2rem;
 }
 
 .course-card button {
@@ -148,7 +156,7 @@ header img {
 
   .goodbye-box img {
     width: 150px;
-    margin: 0 auto;
+    margin: 0 12%;
     float: none;
   }
 
