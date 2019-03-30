@@ -32,10 +32,17 @@ $(document).ready(function(){
     console.log(courseClass);
 
     $(courseClass).removeClass('my-hide');
+    $("#formModal").modal('toggle');
+    return false;
 
     // $("#formModal").modal('hide');
 
   });
+
+  $(".openModal").on("click", function(){
+    $(".display-box").children().addClass('my-hide');
+    $("#formModal").modal('show');
+  })
 
   $(".view-all").on("click", function() {
     $(".display-box").children().removeClass('my-hide');
@@ -46,8 +53,9 @@ $(document).ready(function(){
     $("#formModal").modal('show');
   });
 
-  $('#formModal').on('hidden.bs.modal', function (e) {
+    $('#formModal').on('hidden.bs.modal', function (e) {
       $("form").trigger("reset");
-})
+  });
+
 
 });
