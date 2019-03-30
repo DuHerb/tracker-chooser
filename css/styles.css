@@ -107,7 +107,7 @@ header img {
 }
 
 .goodbye-box p{
-  max-width: 80%;
+  max-width: 90%;
   line-height: 1.5;
 }
 
@@ -125,8 +125,9 @@ header img {
   max-width: 300px;
   float: right;
   border-radius: 110px;
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
-
 
 .my-hide {
   display: none;
@@ -141,4 +142,14 @@ header img {
   color: white;
   background-color: #00B3B4;
   margin: 20px auto;
+}
+
+@media only screen and (max-width: 570px) {
+
+  .goodbye-box img {
+    width: 150px;
+    margin: 0 auto;
+    float: none;
+  }
+
 }
