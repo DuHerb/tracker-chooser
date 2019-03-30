@@ -63,7 +63,4 @@ $(document).ready(function(){
       $("form").trigger("reset");
   });
 
-  // $(".goodbye-box").removeClass("my-hide");
-  // $(".goodbye-box").addClass("my-hide");
-
 });
