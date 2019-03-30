@@ -26,13 +26,13 @@ $(document).ready(function(){
     var q5 = $('input:radio[name=question5]:checked').val();
     var q6 = $('input:radio[name=question6]:checked').val();
 
-    //save for testing
-    //console.log(q1, q2, q3, q4, q5, q6);
+    //save for testing and debugging
+    console.log(q1, q2, q3, q4, q5, q6);
 
     var courseClass = buildCourseClass(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
 
-    //save for testing
-    // console.log(courseClass);
+    //save for testing and debugging
+    console.log(courseClass);
 
     $(courseClass).removeClass('my-hide');
     $(".goodbye-box").removeClass("my-hide");
