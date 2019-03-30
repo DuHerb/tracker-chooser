@@ -16,42 +16,43 @@ $(document).ready(function(){
   //validates that radio button from each group is selected
   $('#main-submit').click(function(event){
     event.preventDefault();
-      var check = true;
-      $("input:radio").each(function(){
-          var name = $(this).attr("name");
-          if($("input:radio[name="+name+"]:checked").length == 0){
-              check = false;
-          }
-      });
-      //save console.log for debugging
-      console.log(check);
+    var check = true;
+    $("input:radio").each(function(){
+        var name = $(this).attr("name");
+        if($("input:radio[name="+name+"]:checked").length == 0){
+            check = false;
+        }
+    });
+    //save console.log for debugging
+    console.log(check);
 
-      if(check){
-          var q1 = $('input:radio[name=question1]:checked').val();
-          var q2 = $('input:radio[name=question2]:checked').val();
-          var q3 = $('input:radio[name=question3]:checked').val();
-          var q4 = $('input:radio[name=question4]:checked').val();
-          var q5 = $('input:radio[name=question5]:checked').val();
-          var q6 = $('input:radio[name=question6]:checked').val();
+    if(check){
+        var q1 = $('input:radio[name=question1]:checked').val();
+        var q2 = $('input:radio[name=question2]:checked').val();
+        var q3 = $('input:radio[name=question3]:checked').val();
+        var q4 = $('input:radio[name=question4]:checked').val();
+        var q5 = $('input:radio[name=question5]:checked').val();
+        var q6 = $('input:radio[name=question6]:checked').val();
 
-          //save for testing and debugging
-          console.log(q1, q2, q3, q4, q5, q6);
+        //save for testing and debugging
+        console.log(q1, q2, q3, q4, q5, q6);
 
-          var courseClass = buildCourseClass(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
+        var courseClass = buildCourseClass(reduceInput(q1,q2), reduceInput(q3,q4), reduceInput(q5,q6));
 
-          //save for testing and debugging
-          console.log(courseClass);
+        //save for testing and debugging
+        console.log(courseClass);
 
-          $(courseClass).removeClass('my-hide');
-          $(".goodbye-box").removeClass("my-hide");
-          // $("#invalidInput").addClass('my-hide');
-          $("#formModal").modal('toggle');
-          return false;
+        $(courseClass).removeClass('my-hide');
+        $(".goodbye-box").removeClass("my-hide");
+        $("#invalidInput").addClass('my-hide');
+        $("#formModal").modal('toggle');
+        return false;
 
-      }else{
-          $("#invalidInput").removeClass('my-hide');
-          $("form").trigger("reset");
-      }
+    }else{
+        $("#main-submit").effect("shake");
+        $("#invalidInput").removeClass('my-hide');
+        $("form").trigger("reset");
+    }
   });
   // button controls
   $(".openModal").on("click", function(){
